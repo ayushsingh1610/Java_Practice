@@ -23,13 +23,13 @@ public class code040506 {
                 int n = s.nextInt();
 
                 ob.set(n-1, element);
-
+                Display(ob);
                 break;
             }
             case 2:
             {
                 ob.remove(2);
-
+                Display(ob);
                 break;
             }
 
@@ -42,11 +42,12 @@ public class code040506 {
                 if(ob.contains(str))    System.out.println("Element present");
                 else    System.out.println("Element Not Present");
 
+                Display(ob);
+
                 break;
             }
         }
         
-        Display(ob);
     }
     public static void Input(ArrayList<String> a)
     {
