@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.*;
 public class code07 {
     public static void main(String[] args) {
@@ -73,7 +74,74 @@ public class code07 {
                 break;
             }
 
-            //
+            //join two array list
+            case 6:
+            {
+                Scanner sc = new Scanner(System.in);
+                Input(ob);
+                ArrayList<String> aList = new ArrayList<>();
+                aList.addAll(ob);
+                aList.add("Violet");
+                aList.add("Black");
+                aList.add("Brown");
+                aList.add("Metallic grey");
+                aList.add("Silver");
+
+                System.out.println(aList);
+                break;
+            }
+
+            //clone an arralist to another array list
+            case 7:
+            {
+                Input(ob);
+                ArrayList<String> aList =new ArrayList<>();
+                aList.addAll(ob);
+            }
+
+            //empty an arraylist
+            case 8:
+            {
+                Input(ob);
+                ob.removeAll(ob);
+                Display(ob);
+            }
+
+            // Test whether is empty or not
+            case 9:
+            {
+                Input(ob);
+                // ob.removeAll(ob);
+                if(ob.isEmpty())
+                System.out.println("ArrayList is Empty ");
+
+                else
+                System.out.println("ArrayList is Not Empty");
+            }
+
+            // Trimming the capacity
+            case 10:
+            {
+                Input(ob);
+                ArrayList<String> ob2 = new ArrayList<>(10);
+                ob2.addAll(ob);
+                ob2.trimToSize();
+
+                System.out.println("Size after trimming = " + ob2.size());
+            }
+
+            //Replace the 2nd element with specified element
+            case 11:
+            {
+                Input(ob);
+                Scanner sc = new Scanner(System.in);
+                System.out.print("Enter the Element to add on 2nd position = ");
+                String element = sc.nextLine();
+
+                ob.set(2,element);
+
+                Display(ob);
+            }
         }
     }
     public static void Input(ArrayList<String> a)
