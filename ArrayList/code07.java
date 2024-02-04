@@ -142,6 +142,15 @@ public class code07 {
 
                 Display(ob);
             }
+
+            // Print all element with position
+            case 12:
+            {
+                Input(ob);
+                for (int i = 0; i < ob.size(); i++) {
+                    System.out.printf("At position %d = %s\n", i+1,ob.get(i));
+                }
+            }
         }
     }
     public static void Input(ArrayList<String> a)
