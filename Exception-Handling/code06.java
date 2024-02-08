@@ -25,10 +25,11 @@ public class code06
     }
     public static boolean isDuplicate(int nums[])
     {
-        Arrays.sort(nums);
-        for (int i = 0; i < nums.length-1; i++) {
-            if(nums[i+1]==nums[i])
-            return true;
+        ArrayList<Integer> a = new ArrayList<>();
+        for (int i = 0; i < nums.length; i++) {
+            if(a.contains(nums[i]))     return true;
+
+            a.add(nums[i]);
         }
         return false;
     }
