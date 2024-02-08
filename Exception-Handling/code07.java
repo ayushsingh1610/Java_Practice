@@ -8,8 +8,10 @@ public class code07
         
         System.out.print("Enter the string = ");
         String str = sc.nextLine();
-        char[] ch = str.toCharArray();
-        HashSet<Character> CharArray = new HashSet<>();
+        List<Character> CharArray = new ArrayList<>();
+        for (int i = 0; i < args.length; i++) {
+            CharArray.add(str.charAt(i));
+        }
         if(containVowel(CharArray))
         {
             throw new NewException("String contains vowels.");
@@ -20,7 +22,7 @@ public class code07
         }
 
     }
-    public static boolean containVowel(HashSet<Character> str)
+    public static boolean containVowel(List<Character> str)
     {
         if(str.contains('a') || str.contains('e')|| str.contains('i')|| str.contains('u')|| str.contains('o'))
         return true;
