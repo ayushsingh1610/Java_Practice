@@ -8,21 +8,21 @@ public class code07
         
         System.out.print("Enter the string = ");
         String str = sc.nextLine();
-        List<Character> CharArray = new ArrayList<>();
-        for (int i = 0; i < args.length; i++) {
+        ArrayList<Character> CharArray = new ArrayList<>();
+        for (int i = 0; i < str.length(); i++) {
             CharArray.add(str.charAt(i));
         }
-        if(containVowel(CharArray))
+        if(!containVowel(CharArray))
         {
-            throw new NewException("String contains vowels.");
+            throw new NewException("String does not contains vowels.");
         }
         else
         {
-            System.out.println("Vowels are NOT present.");
+            System.out.println("Vowels are present.");
         }
 
     }
-    public static boolean containVowel(List<Character> str)
+    public static boolean containVowel(ArrayList<Character> str)
     {
         if(str.contains('a') || str.contains('e')|| str.contains('i')|| str.contains('u')|| str.contains('o'))
         return true;
