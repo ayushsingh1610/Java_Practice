@@ -1,6 +1,5 @@
 Write a Java program to check if the given pathname is a directory or a file.
 Write a Java program to check if a file or directory has read and write permissions.
-Write a Java program to check if the given pathname is a directory or a file.
 Write a Java program to check if a file or directory specified by pathname exists or not.
 Write a Java program to get specific files with extensions from a specified folder.
 Write a Java program to get a list of all file/directory names in the given directory.
