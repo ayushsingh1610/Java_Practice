@@ -2,7 +2,7 @@
 import java.util.*;
 public class code07
 {
-    public static void main(String args[])throws NewException
+    public static void main(String args[])throws Exception
     {
         Scanner sc = new Scanner(System.in);
         
@@ -14,27 +14,20 @@ public class code07
         }
         if(!containVowel(CharArray))
         {
-            throw new NewException("String does not contains vowels.");
+            throw new Exception("String does not contains vowels.");
+            
         }
         else
         {
             System.out.println("Vowels are present.");
         }
-
     }
-    public static boolean containVowel(ArrayList<Character> str)
+    public static boolean containVowel(ArrayList<Character> ch)
     {
-        if(str.contains('a') || str.contains('e')|| str.contains('i')|| str.contains('u')|| str.contains('o'))
+        if (ch.contains('a') || ch.contains('e')|| ch.contains('i')|| ch.contains('u')|| ch.contains('o'))
         return true;
 
         return false;
     }
 
-}
-class NewException extends Exception
-{
-    public NewException(String str)
-    {
-        super(str);
-    }
 }
