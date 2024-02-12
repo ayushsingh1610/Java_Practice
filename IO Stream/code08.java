@@ -2,12 +2,8 @@
 import java.io.*;
 public class code08 {
     public static void main(String[] args)throws IOException {
-        // BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
+        
         File f = new File("C:\\Users\\good\\Documents\\Temporary\\b.txt");
-
-        
         System.out.println("Size of file is = " + f.length());
-        
     }
 }
