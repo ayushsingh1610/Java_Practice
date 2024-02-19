@@ -28,12 +28,12 @@ public class code16
 /*
  * For second largest
  * 
- *  int slargest =0, largest=0;
- * for(int i=0;i<a.length;i++)
- * {
- * if(a[i]>largest)
- * {    
- * 
- * }
- * }
+ * int slargest =-1, largest=0;
+        for (int i = 0; i < a.length; i++) {
+            if(a[i]>largest && slargest!=largest)
+            {
+                slargest = largest;
+                largest = a[i];
+            }
+        }
  */
