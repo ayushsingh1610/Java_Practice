@@ -19,5 +19,4 @@ Write a Java program to implement a lambda expression to find the largest prime 
 Write a Java program to implement a lambda expression to find the length of the longest and smallest string in a list.
 Write a Java program to implement a lambda expression to check if a list of strings are all uppercase or all lowercase or mixedcase.
 Write a Java program to implement a lambda expression to find the average length of strings in a list.
-Write a Java program to implement a lambda expression to sort a list of objects based on a specific attribute.
 Write a Java program to implement a lambda expression to convert an integer to their corresponding binary representation.
