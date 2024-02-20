@@ -10,17 +10,15 @@ public class code20
 
         System.out.println("Binary is = " + toBinary(n));
     }
-    public static String toBinary(int n)
+    public static int toBinary(int n)
     {
-        String num = "";
+        int num = 0;
         while(n>0)
         {
             int r = n%2;
-            num = r + num;
+            num = (r*10) + num;
             n/=2;
         }
-        System.out.println("New number = " + num);
-
         return num;
     }
 }
