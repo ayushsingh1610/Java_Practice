@@ -17,3 +17,15 @@ Java Program to Buzz Number
 Java Program to Duck Number
 Java Program to Sphenic Number. 
 Java Program to swap two numbers using bitwise operator
+Write a Java program to convert an integer number to a binary number.
+Write a Java program to convert a decimal number to an octal number.
+Write a Java program to convert a binary number to a decimal number.
+Write a Java program to convert a binary number to an octal number.
+Write a Java program to convert a octal number to a decimal number.
+Write a Java program to convert a octal number to a binary number.
+Write a Java program to convert a hexadecimal value into a decimal number.
+Write a Java program to convert a octal number to a hexadecimal number.
+Write a Java program to convert a hexadecimal number into a binary number. 
+Write a Java program to convert a hexadecimal value into an octal number.
+Write a Java program to convert a decimal number to a hexadecimal number.
+Write a Java program to convert a binary number to a hexadecimal number.
