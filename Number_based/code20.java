@@ -10,13 +10,13 @@ public class code20
 
         System.out.println("Binary is = " + toBinary(n));
     }
-    public static int toBinary(int n)
+    public static String toBinary(int n)
     {
-        int num = 0;
+        String num = "";
         while(n>0)
         {
             int r = n%2;
-            num = (r*10) + num;
+            num = r+num;
             n/=2;
         }
         return num;
