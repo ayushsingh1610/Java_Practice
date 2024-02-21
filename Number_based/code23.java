@@ -7,28 +7,29 @@ public class code23
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the binary number = ");
         int n = sc.nextInt();
-        System.out.println("BInart to Octal = " + Binary_to_Octal(n));
+        System.out.println("Binary to Octal = " + Binary_to_Octal(n));
     }
-    public static int Binary_to_Octal(int n)
+    public static String Binary_to_Octal(int n)
     {
-        int num =0;
-
+        if(n<1000)  return "";
+        String num ="";
         while(n>0)
         {
             int r = n%1000;
-            num+= toBinary(r);
+            num = String.valueOf(toDecimal(r)) + num;
             n/=1000;
         }
         return num;
     }
-    public static int toBinary(int n)
+    public static int toDecimal(int n )
     {
-        int num = 0;
+        int i=0,num =0;
         while(n>0)
         {
-            int r = n%2;
-            num = (r*10) + num;
-            n/=2;
+            int r = n%10;
+            num = num + (int)Math.pow(2,i)*r;
+            n/=10;
+            i++;
         }
         return num;
     }
