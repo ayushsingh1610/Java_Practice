@@ -1,6 +1,5 @@
 import javax.swing.*;
-import java.util.*;
-import java.awt.*;  
+import java.util.*; 
 import java.awt.event.*;  
 public class code03 implements ActionListener {
     public static void main(String[] args) {
@@ -21,28 +20,47 @@ public class code03 implements ActionListener {
 
         JButton button = new JButton("Submit");
         button.setBounds(60, 170, 80, 25);
+        
+        
+        final JLabel text = new JLabel() ;
+        text.setBounds(50, 210, 200, 25);
+        
+        text.setVisible(false);
+        button.addActionListener(new ActionListener() {         // Logic to display label when button is pressed.
+            public void actionPerformed(ActionEvent e){  
+                text.setVisible(true);    
+        }
+        });
+
 
         button.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e){  
-                JLabel text = new JLabel();
-                text.setText("Eligible to Vote");  
-        }
+            public void actionPerformed(ActionEvent ae)
+            {
+                String naam = name.getText();                   // so that we can retrieve the name from text field
+                int a = Integer.parseInt(age.getText());        // so that we can retrieve the age from textField
+                if(a>=18)
+                {
+                    text.setText(naam + " is eligible to Vote");    // so that we change the display text
+                }
+                else 
+                {
+                    text.setText(naam + " is NOT Eligible to Vote");
+                }
+            }
         });
         f.add(l1);
         f.add(l2);
         f.add(name);
         f.add(age);
         f.add(button);
+        f.add(text);
         f.setSize(400,400);
         f.setLayout(null);
         f.setVisible(true);
     }
-
     @Override
-    public void actionPerformed(ActionEvent e) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'actionPerformed'");
+    public void actionPerformed(ActionEvent e)
+    {
+        System.out.println(e);
     }
-      
-    
 }
